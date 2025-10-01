@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App Topics</title>
+    <!-- Assuming your compiled Tailwind CSS is here -->
+    <link rel="stylesheet" href="./src/output.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" xintegrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .main-content-card {
+            /* Mobile styles */
+            width: 100%; 
+        }
+
+        @media (min-width: 1024px) {
+            .main-content-card {
+                /* Laptop Styles: Force 80% width */
+                width: 80% !important; 
+            }
+            
+            /* Specific centering for the Topic Cards list on laptops */
+            .topic-list-center {
+                /* Use margin auto to center a block element within its 80% wide parent */
+                margin-left: auto;
+                margin-right: auto;
+                /* Limit the width of the cards list itself to look good */
+                max-width: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body style="color: white;">
+    
+    <div style="background: linear-gradient(to right, #3550DC , #27E9F7 );" class="h-screen w-full lg:flex lg:justify-center lg:items-start lg:p-8">
+
+        <div class="lg:h-[95%] lg:w-[80%] flex justify-center items-center" >
+
+            <div class="main-content-card w-full lg:w-4/5 lg:max-w-5xl lg:h-auto lg:shadow-2xl lg:bg-black/10 lg:backdrop-blur-md lg:p-5 mt-5 lg:rounded-2xl"> 
+                
+                <nav class="flex justify-between px-4 py-3 items-center text-white lg:justify-around lg:space-x-8">
+                    <i class="fa-solid fa-bars fa-2x "></i>
+                    <i class="fa-solid fa-circle-user fa-2x"></i>
+                </nav>
+    
+                <div class="p-4 space-y-1 lg:text-center">
+                    <h5 id="hello-user"></h5>
+                    <h1 class="text-2xl font-bold lg:text-3xl">Let's Test Your Knowledge</h1>
+                </div>
+                <div class=" space-y-1 lg:text-center hidden">
+                    <h1 class="sm:hidden font-bold ">Choose a Topic</h1>
+                </div>
+                
+
+                <div class="topic-list-center w-full h-7/12 space-y-6 p-2 mt-5 flex flex-col justify-around items-center lg:w-full lg:h-auto lg:p-4">
+    
+    
+                    <div onclick="window.location.href='htmlquize/index.html'" 
+                        class="flex items-center gap-16 h-20 w-full pl-3 bg-white/20 backdrop-blur-lg border border-white/20 shadow-lg  rounded-2xl 
+                        transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg  cursor-pointer outline-none 
+                        active:bg-white active:text-black lg:h-24 lg:pl-6 lg:gap-24  hover:border-2 hover:border-white">
+                        <div>
+                            <i class="fa-brands fa-html5 text-xl lg:text-2xl"></i>
+                            <h1 class="font-semibold lg:text-xl">HTML</h1>
+                        </div>
+                        <div class="pl-11">
+                            <h3>Total Questons : 12</h3>
+                            <h3>Total Time : 2 min</h3>
+                        </div>
+                    </div>
+    
+                    <!-- CSS Quiz Card -->
+                    <div onclick="window.location.href='cssquize/index.html'" 
+                        class="flex items-center gap-16 h-20 w-full pl-3 bg-white/20 backdrop-blur-lg border border-white/20 shadow-lg  rounded-2xl 
+                        transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg  cursor-pointer outline-none 
+                        active:bg-white active:text-black lg:h-24 lg:pl-6 lg:gap-24  hover:border-2 hover:border-white">
+                        <div>
+                            <i class="fa-brands fa-css text-xl lg:text-2xl"></i>
+                            <h1 class="font-semibold lg:text-xl">CSS</h1>
+                        </div>
+                        <div class="pl-16">
+                            <h3>Total Questons : 12</h3>
+                            <h3>Total Time : 2 min</h3>
+                        </div>
+                    </div>
+    
+                    <!-- JavaScript Quiz Card -->
+                    <div onclick="window.location.href='Jsquize/index.html'" 
+                        class="flex items-center gap-8 h-20 w-full pl-3 bg-white/20 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl 
+                        <!-- transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg  cursor-pointer outline-none  -->
+                        active:bg-white active:text-black lg:h-24 lg:pl-6 lg:gap-24 hover:border-2 hover:border-white">
+                        <div>
+                            <i class="fa-brands fa-js text-xl lg:text-2xl"></i>
+                            <h1 class="font-semibold lg:text-xl">JavaScript</h1>
+                        </div>
+                        <div class="pl-2">
+                            <h3>Total Questons : 12</h3>
+                            <h3>Total Time : 2 min</h3>
+                        </div>
+                    </div>
+    
+                    <!-- React Quiz Card -->
+                    <div onclick="window.location.href='reactquize/index.html'" 
+                        class="flex items-center gap-16 h-20 w-full pl-3 bg-white/20 backdrop-blur-lg border border-white/20 shadow-lg rounded-2xl 
+                        transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg cursor-pointer outline-none 
+                        active:bg-white active:text-black lg:h-24 lg:pl-6 lg:gap-24  hover:border-2 hover:border-white">
+                        <div>
+                            <i class="fa-brands fa-react text-xl lg:text-2xl"></i>
+                            <h1 class="font-semibold lg:text-xl">React</h1>
+                        </div>
+                        <div class="pl-12">
+                            <h3>Total Questons : 12</h3>
+                            <h3>Total Time : 2 min</h3>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>

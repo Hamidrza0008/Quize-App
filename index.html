@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="h-screen w-full  flex justify-center items-center" style="background: linear-gradient(to right, #3550DC , #27E9F7 );">
+
+        <div class=" flex  pt-20 items-center justify-center ">
+    
+            <div class="form-container" id="form-container">
+                <h2>Fill the Form</h2>
+                <form>
+                    <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name"  placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age">
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender">
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    </div>
+                    <!-- <h6 id="error-message" style="color:red; display:none; ">
+                        Please Fill All Details
+                    </h6> -->
+                                    
+                    <button class="button" id="proceedBtn" type="button" onclick="saveName()">Proceed</button>
+                    <h6 id="error-message" style="color:red; display:none; margin-top:8px;">
+                          Please Fill All Details
+                    </h6>
+            </div>
+            
+    
+        </div> 
+    </div>
+
+    <!-- <div class="h-full w-full bg-gray-500 text-white font-bold text-2xl for-leptops flex flex-col space-y-2">
+        <h1>Please Open in Mobile/Tablet</h1>
+        <h3 class="text-2xl">Website is Under Production</h3>
+    </div> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
